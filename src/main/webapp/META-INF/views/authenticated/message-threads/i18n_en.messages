@@ -26,4 +26,5 @@ authenticated.message-threads.list.label.title = Title
 authenticated.message-threads.list.label.moment = Moment
 
 authenticated.message-thread.error.spam-entity = Message thread contains too much spam words
+authenticated.message-thread.error.username = This user doesn't exist in the message thread 
 

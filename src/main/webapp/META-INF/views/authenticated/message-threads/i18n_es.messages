@@ -26,3 +26,4 @@ authenticated.message-threads.list.label.title = Título
 authenticated.message-threads.list.label.moment = Momento
 
 authenticated.message-thread.error.spam-entity = El hilo contiene demasiadas palabras spam
+authenticated.message-thread.error.username = Este usuario no existe en este hilo

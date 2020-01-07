@@ -93,8 +93,10 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 			int isSpamReference = (int) (Arrays.asList(spams).stream().filter(x -> entity.getReference().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
 			int isSpamTitle = (int) (Arrays.asList(spams).stream().filter(x -> entity.getTitle().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
 			int isSpamDescription = (int) (Arrays.asList(spams).stream().filter(x -> entity.getDescriptor().getDescription().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
+			int isSpamJobDescription = (int) (Arrays.asList(spams).stream().filter(x -> entity.getJobChallenge().getDescription().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
+			int isSpamJobMoreInfo = (int) (Arrays.asList(spams).stream().filter(x -> entity.getJobChallenge().getMoreInfo().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
 
-			sumSpam += isSpamReference + isSpamTitle + isSpamDescription;
+			sumSpam += isSpamReference + isSpamTitle + isSpamDescription + isSpamJobDescription + isSpamJobMoreInfo;
 			boolean isSpamEntity = sumSpam <= spam.getThreshold();
 			errors.state(request, isSpamEntity, "status", "employer.job.error.entity-spam");
 		}

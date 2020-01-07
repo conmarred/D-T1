@@ -87,7 +87,11 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		int spamReference = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getReference().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
 		int spamStatement = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getStatement().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
 		int SpamSkills = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getSkills().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
-		int sumSpam = spamQualification + SpamSkills + spamReference + spamStatement;
+		int SpamAnswer = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getAnswer().getAnswer().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
+		int SpamPassword = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getAnswer().getPassword().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
+		int SpamPropertyOptional = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getAnswer().getPropertyOptional().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
+
+		int sumSpam = spamQualification + SpamSkills + spamReference + spamStatement + SpamAnswer + SpamPassword + SpamPropertyOptional;
 		boolean isWorkerSpam = sumSpam <= spam.getThreshold();
 		errors.state(request, isWorkerSpam, "qualifications", "worker.application.error.spam-entity");
 
