@@ -1,0 +1,148 @@
+﻿# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+# master.banner.welcome #######################################################
+
+master.banner.background = #FFE97F 
+
+﻿# master.welcome ##############################################################
+
+master.welcome.title = ¡Bienvenidos!
+master.welcome.text = \
+	Bienvenidos a Acme Jobs!  Nunca antes ha sido tan sencillo encontrar \
+	un trabajo.
+
+# master.menu #################################################################
+
+master.menu.home = Inicio
+master.menu.sign-up = Registrarse
+master.menu.sign-in = Entrar
+master.menu.sign-out = Salir
+
+# master.menu.anonymous #######################################################
+
+master.menu.anonymous = Anónimo
+master.menu.anonymous.list-announcement = Anuncios
+master.menu.anonymous.list-company-record = Compañías
+master.menu.anonymous.list-investor-records = Inversores
+
+
+# master.menu.administrator ###################################################
+
+master.menu.administrator = Administrador
+master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.list-announcement = Todos los anuncios
+master.menu.administrator.spam = Parámetros de customización
+master.menu.administrator.create-announcement = Crear anuncio
+master.menu.administrator.create-investor-records = Crear inversor
+master.menu.administrator.create-challenge = Crear reto
+master.menu.administrator.list-investor-records = Inversores
+master.menu.administrator.list-challenges = Retos
+master.menu.administrator.list-company-record = Compañías
+master.menu.administrator.create-company-record = Crear compañías
+master.menu.administrator.list-commercial-banner = Banners comerciales
+master.menu.administrator.create-commercial-banner = Crear banner comercial
+master.menu.administrator.list-non-commercial-banner = Banners no comerciales
+master.menu.administrator.create-non-commercial-banner = Crear banner no comercial
+master.menu.administrator.request-auditor = Solicitudes de auditores
+master.menu.administrator.dashboard = Dashboard
+
+# master.menu.authenticated ########################################################
+
+master.menu.authenticated = Autenticado
+master.menu.authenticated.list-request = Solicitudes
+master.menu.authenticated.list-announcement = Anuncios
+master.menu.authenticated.list-company-record = Compañías
+master.menu.authenticated.list-investor-records = Inversores
+master.menu.authenticated.list-challenge = Retos
+master.menu.authenticated.list-offer = Ofertas
+master.menu.authenticated.list-active-jobs = Trabajos
+master.menu.authenticated.list-message-thread = Hilos de mensajes (Involucrado)
+master.menu.authenticated.create-message-thread = Crear hilo de mensajes
+
+# master.menu.provider ########################################################
+
+master.menu.provider = Proveedor
+master.menu.provider.create-request = Crear solicitud
+
+# master.menu.employer ##########################################################
+
+master.menu.employer = Empleador/a
+master.menu.employer.list-jobs-mine = Mis trabajos
+master.menu.employer.list-applications-mine = Aplicaciones hechas a mis trabajos
+master.menu.employer.create-job = Crear trabajo
+
+# master.menu.consumer ##########################################################
+
+master.menu.consumer = Consumidor
+master.menu.consumer.create-offer = Crear oferta
+
+# master.menu.auditor ########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list-jobs-write-auditor = Trabajos (Escrita una auditoría)
+master.menu.auditor.list-non-jobs-write-auditor = Trabajos (No escrita una auditoría)
+
+# master.menu.worker ##########################################################
+
+master.menu.worker = Trabajador
+master.menu.worker.list-applications-mine = Mis aplicaciones
+
+# master.menu.user-account ####################################################
+
+master.menu.user-account = Cuenta
+master.menu.user-account.general-data = Datos generales
+master.menu.user-account.provider = Datos de proveedor
+master.menu.user-account.become-provider = Hazte proveedor
+master.menu.user-account.consumer = Datos de consumidor
+master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.user-account.employer = Datos de empleador
+master.menu.user-account.become-employer = Hazte empleador
+master.menu.user-account.worker = Datos de trabajador
+master.menu.user-account.become-worker = Hazte trabajador
+master.menu.user-account.auditor = Datos de auditor
+master.menu.user-account.become-auditor = Solicitar ser auditor
+
+﻿# master.footer ###############################################################
+
+master.footer.title.about = Nosotros
+master.footer.label.company = La empresa
+master.footer.label.license = Licencia
+master.footer.title.social = Social
+master.footer.label.linked-in = Linked-In
+master.footer.label.twitter = Twitter
+master.footer.title.languages = Lenguages
+master.footer.label.english = Inglés
+master.footer.label.spanish = Español
+
+# master.company ##############################################################
+
+master.company.title = La compañía
+master.company.text = \
+	Acme Jobs, Inc. es una compañía fictícia que proporciona trabajos \
+    para las personas de la asignatura Diseño y Pruebas, en el Grado \
+	en Ingeniería del Software de la Universidad de Sevilla.
+master.company.name = Acme Jobs, Inc.
+master.company.address = Calle, número, Ciudad, Estado, País
+master.company.phone = +000 123 456
+master.company.email = contact@acme.com
+
+# master.license ##############################################################
+
+master.license.title = Licencia
+master.license.text = \
+	Puede usar este sistema de forma completamente gratuita respetando las leyes \
+	que sean aplicables.  No compartimos ninguna información sobre Ud. con ninguna \
+	otra empresa.  Tan sólo usamos tres cookies, a saber: "JSESSIONID" para identificar \
+	su sesión de trabajo, "remember" para mantener su información de autentificación \
+	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
+	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
+	local de su navegador para saber dónde tienen que ir algunos botones.

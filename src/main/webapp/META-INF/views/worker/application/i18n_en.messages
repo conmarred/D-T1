@@ -1,0 +1,39 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+worker.application.form.label.reference = Reference code
+worker.application.form.label.moment = Moment
+worker.application.form.label.status = Status
+worker.application.form.label.statement = Statement
+worker.application.form.label.skills = Skills
+worker.application.form.label.qualification = Qualifications
+worker.application.form.label.justification = Employer's justification
+worker.application.form.label.job.title = Job's title 
+
+worker.application.form.panel.answer = Answer
+worker.application.form.panel.answer.answer = Answer
+worker.application.form.panel.answer.password = Password
+worker.application.form.panel.answer.propertyOptional = propertyOptional
+
+worker.application.form.button.return = Return
+
+worker.application.list.label.moment = Moment
+worker.application.list.label.status = Status
+worker.application.list.label.job.title = Job's title
+
+worker.application.form.button.create = Apply
+
+worker.application.error.spam-entity = Application contains too much words spam
+worker.application.reference.error.duplicated = Reference number is duplicated
+
+worker.application.error.incorrect-password = Password must include at least one letter, one number and one punctuation symbol
+worker.application.error.wrong-password-length = Password length must be a minimum of X characters
+worker.application.error.optional-not-empty = The propertyOptional must not be empty
+worker.application.error.answer-not-empty = The answer must not be empty

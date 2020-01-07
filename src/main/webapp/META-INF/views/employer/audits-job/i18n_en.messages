@@ -1,0 +1,27 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+employer.audits-of-a-job.form.label.moment = Moment
+employer.audits-of-a-job.form.label.title = Title
+employer.audits-of-a-job.form.label.status = Status
+employer.audits-of-a-job.form.label.body = Body
+employer.audits-of-a-job.form.label.job.title = Job's title
+employer.audits-of-a-job.form.label.username = Username
+
+employer.audits-of-a-job.form.button.return = Return
+
+
+employer.audits-of-a-job.list.label.title = Title
+employer.audits-of-a-job.list.label.moment = Moment
+employer.audits-of-a-job.list.label.job.title = Job's title
+employer.audits-of-a-job.list.label.username = Username
+
+employer.audits-of-a-job.list.button.return = Return
+

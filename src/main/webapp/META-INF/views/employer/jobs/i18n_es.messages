@@ -1,0 +1,51 @@
+﻿# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+employer.job.form.label.title = Título
+employer.job.form.label.reference = Código de referencia
+employer.job.form.label.status = Estado
+employer.job.form.label.deadline = Fecha límite
+employer.job.form.label.salary = Sueldo
+employer.job.form.label.link = Más información
+employer.job.form.panel.is-final-mode = Modo final
+employer.job.form.status.DRAFT = BORRADOR
+employer.job.form.status.PUBLISHED = PUBLICADO
+
+employer.job.form.panel.descriptor = Descriptor/a
+employer.job.form.panel.descriptor.description = Descripción
+employer.job.form.panel.descriptor.duties = Labor
+
+employer.job.form.panel.jobChallenge = XXXXJobChallenge
+employer.job.form.panel.jobChallenge.description = Descripcion
+employer.job.form.panel.jobChallenge.moreInfo = Link más información
+
+
+employer.job.form.button.return = Volver
+employer.job.form.button.list-audits-job = Auditorías de este trabajo
+employer.job.form.button.duties = Labores de este/a descriptor/a
+employer.job.form.button.create-duty = Crear labor para este/a descriptor/a
+employer.job.button.update = Actualizar
+employer.job.button.create = Crear
+employer.job.button.delete = Borrar
+
+employer.job.list.label.title = Título
+employer.job.list.label.deadline = Fecha límite
+employer.job.list.label.salary = Sueldo
+
+employer.job.error.deadline = La fecha límite debe estar en futuro
+employer.job.error.correct-currency = Moneda inválida
+employer.reference.error.duplicated = El número de referencia es duplicado
+employer.job.error.time = Las labores de este/a descriptor/a deben sumar el 100% de la ocupacion semanal
+employer.job.error.duties = El descriptor/a debe tener algún deber
+employer.job.error.descriptor-description = No puede estar en blanco
+employer.job.error.entity-spam = El trabajo contiente demasiadas palabras spam
+
+employer.job.message.no-delete = Este trabajo no puede ser eliminado porque tiene aplicaciones hechas por trabajadores.
+employer.jobChallenge.error.correct-job-challenge = La descripción no puede estar vacía

@@ -1,0 +1,31 @@
+﻿# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+auditor.non-jobs-write-auditors.form.label.title = Título
+auditor.non-jobs-write-auditors.form.label.reference = Código de referencia
+auditor.non-jobs-write-auditors.form.label.status = Estado
+auditor.non-jobs-write-auditors.form.label.deadline = Fecha límite
+auditor.non-jobs-write-auditors.form.label.salary = Sueldo
+auditor.non-jobs-write-auditors.form.label.link = Más información
+
+auditor.non-jobs-write-auditors.form.panel.descriptor = Descriptor/a
+auditor.non-jobs-write-auditors.form.button.duties = Labores de este/a descriptor/a
+
+auditor.non-jobs-write-auditors.form.panel.jobChallenge = XXXXJobChallenge
+auditor.non-jobs-write-auditors.form.panel.jobChallenge.description = Descripción
+auditor.non-jobs-write-auditors.form.panel.jobChallenge.moreInfo = Enlace para más información
+
+auditor.non-jobs-write-auditors.form.button.return = Volver
+auditor.non-jobs-write-auditors.form.button.list-audits-job = Auditorías de este trabajo
+
+auditor.non-jobs-write-auditors.list.label.title = Título
+auditor.non-jobs-write-auditors.list.label.deadline = Fecha límite
+auditor.non-jobs-write-auditors.list.label.salary = Sueldo
+

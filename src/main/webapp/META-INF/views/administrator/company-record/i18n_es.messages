@@ -1,0 +1,30 @@
+﻿# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.company-record.list.label.incorporated = Nombre
+administrator.company-record.list.label.sector = Sector
+administrator.company-record.list.label.stars = Estrellas
+
+administrator.company-record.form.label.Nameincorporated = Nombre compañía
+administrator.company-record.form.label.name = Nombre
+administrator.company-record.form.label.incorporated = Compañía incorporada
+administrator.company-record.form.label.sector = Sector
+administrator.company-record.form.label.nameCEO = CEO
+administrator.company-record.form.label.activities = Actividades
+administrator.company-record.form.label.webSite = Sitio web
+administrator.company-record.form.label.email = Email
+administrator.company-record.form.label.suffix = Sufijo
+administrator.company-record.form.label.stars = Estrellas
+administrator.company-record.form.label.phoneNumber = Numero de teléfono
+administrator.company-record.button.return = Volver
+administrator.company-record.button.create =  Crear
+administrator.company-record.button.update = Actualizar
+administrator.company-record.button.delete = Eliminar
+administrator.create.stars.error = El numero de estrellas tiene que estar entre 0 y 5

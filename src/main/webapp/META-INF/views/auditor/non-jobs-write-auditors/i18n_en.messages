@@ -1,0 +1,31 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+auditor.non-jobs-write-auditors.form.label.title = Title
+auditor.non-jobs-write-auditors.form.label.reference = Reference code
+auditor.non-jobs-write-auditors.form.label.status = Status
+auditor.non-jobs-write-auditors.form.label.deadline = Deadline
+auditor.non-jobs-write-auditors.form.label.salary = Salary
+auditor.non-jobs-write-auditors.form.label.link = More information
+
+auditor.non-jobs-write-auditors.form.panel.descriptor = Descriptor
+auditor.non-jobs-write-auditors.form.button.duties = Duties of this descriptor
+
+auditor.non-jobs-write-auditors.form.panel.jobChallenge = XXXXJobChallenge
+auditor.non-jobs-write-auditors.form.panel.jobChallenge.description = Description
+auditor.non-jobs-write-auditors.form.panel.jobChallenge.moreInfo = More info Link
+
+auditor.non-jobs-write-auditors.form.button.return = Return
+auditor.non-jobs-write-auditors.form.button.list-audits-job = Audits of this job
+
+auditor.non-jobs-write-auditors.list.label.title = Title
+auditor.non-jobs-write-auditors.list.label.deadline = Deadline
+auditor.non-jobs-write-auditors.list.label.salary = Salary
+

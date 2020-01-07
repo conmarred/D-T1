@@ -1,0 +1,32 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+administrator.challenge.form.label.title = Title
+administrator.challenge.form.label.deadline = Deadline
+administrator.challenge.form.label.description = Description
+administrator.challenge.form.label.goalGOLD = Gold goal
+administrator.challenge.form.label.goalSILVER = Silver goal
+administrator.challenge.form.label.goalBRONZE = Bronze goal
+administrator.challenge.form.label.rewardGOLD = Gold reward
+administrator.challenge.form.label.rewardSILVER = Silver reward
+administrator.challenge.form.label.rewardBRONZE = Bronze reward
+
+administrator.challenge.form.button.return = Return
+administrator.challenge.form.label.create = Create
+administrator.challenge.form.label.update = Update
+administrator.challenge.form.label.delete = Delete
+
+administrator.challenge.list.label.title = Title
+administrator.challenge.list.label.deadline = Deadline
+
+administrator.offer.error.deadline = Deadline must be in the future
+administrator.offer.error.range-money1 = The silver reward must be smaller than the gold reward
+administrator.offer.error.range-money2 = The bronze reward must be smaller than the silver reward
+administrator.challenge.error.correct-currency = Invalid currency

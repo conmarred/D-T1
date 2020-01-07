@@ -1,0 +1,29 @@
+# i18n_en.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+authenticated.message-threads.form.label.title = Title
+authenticated.message-threads.form.label.moment = Moment
+authenticated.message-threads.form.label.users = Users
+
+authenticated.message-threads.form.button.return = Return
+authenticated.message-threads.form.button.messages = Thread's messages
+authenticated.message-threads.form.button.create-message = Create message
+authenticated.message-threads.form.button.create = Create
+authenticated.message-threads.form.button.list-all-users = Users not involved in this message thread
+authenticated.message-threads.form.button.list-users-message-thread = Users involved in this message thread
+authenticated.message-threads.form.label.username = Username
+authenticated.message-threads.form.button.action-user = Add or remove user
+authenticated.message-threads.form.label.message = If you want to add a user, enter a username who does not be involved in the message thread or enter a username who be involved in the message thread to remove him/her. 
+
+authenticated.message-threads.list.label.title = Title
+authenticated.message-threads.list.label.moment = Moment
+
+authenticated.message-thread.error.spam-entity = Message thread contains too much spam words
+
