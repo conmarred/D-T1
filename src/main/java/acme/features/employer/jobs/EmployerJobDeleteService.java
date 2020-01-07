@@ -40,7 +40,7 @@ public class EmployerJobDeleteService implements AbstractDeleteService<Employer,
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description");
+		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description", "jobChallenge.description", "jobChallenge.moreInfo");
 	}
 
 	@Override
@@ -64,6 +64,7 @@ public class EmployerJobDeleteService implements AbstractDeleteService<Employer,
 
 		this.repository.deleteAll(this.repository.dutiesOfADescriptor(entity.getDescriptor().getId()));
 		this.repository.deleteAll(this.repository.auditsOfAJob(entity.getId()));
+		this.repository.delete(entity.getJobChallenge());
 		this.repository.delete(entity);
 	}
 }
