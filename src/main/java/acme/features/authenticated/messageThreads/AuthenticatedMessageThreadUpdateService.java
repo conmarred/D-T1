@@ -63,6 +63,10 @@ public class AuthenticatedMessageThreadUpdateService implements AbstractUpdateSe
 		assert entity != null;
 		assert errors != null;
 
+		String username = request.getModel().getString("username");
+		UserAccount ua = this.repository.findUserAccountByUsername(username);
+		errors.state(request, ua != null, "username", "authenticated.message-thread.error.username");
+
 	}
 
 	@Override
@@ -79,10 +83,17 @@ public class AuthenticatedMessageThreadUpdateService implements AbstractUpdateSe
 		} else {
 			users.add(ua);
 		}
-
-		entity.setUsers(users);
-		entity.getUsers().size();
-		this.repository.save(entity);
+		if (users.isEmpty()) {
+			Collection<Integer> messagesId = this.repository.findMessagesId(request.getModel().getInteger("messageThreadId"));
+			for (Integer i : messagesId) {
+				this.repository.deleteById(i);
+			}
+			this.repository.delete(entity);
+		} else {
+			entity.setUsers(users);
+			entity.getUsers().size();
+			this.repository.save(entity);
+		}
 	}
 
 }

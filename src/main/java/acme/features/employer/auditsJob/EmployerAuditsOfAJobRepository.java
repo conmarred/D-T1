@@ -19,4 +19,9 @@ public interface EmployerAuditsOfAJobRepository extends AbstractRepository {
 	@Query("select a from AuditRecord a where a.id = ?1")
 	AuditRecord findOne(int id);
 
+	@Query("select count(j) > 0 from Job j where j.id = ?1 and j.employer.id = ?2")
+	boolean isCorrectJob(int idJob, int idEmployer);
+
+	@Query("select count(j) > 0 from Job j where j.id = (select a.job.id from AuditRecord a where a.id = ?1 and a.status = ?2) and j.employer.id = ?3")
+	boolean isCorrectAuditRecord(int id, AuditRecordStatus auditRecordStatus, int idEmployer);
 }

@@ -22,6 +22,9 @@ public interface AuditorDutiesRepository extends AbstractRepository {
 	@Query("select j.title from Job j where j.descriptor.id = ?1")
 	String findJobTitle(int id);
 
-	@Query("select count(d) > 0 from Duty d where d.descriptor.id = (select j.descriptor.id from Job j where j.id = ?1 and now()<j.deadline and j.status = ?2)")
-	boolean isCorrectDuty(int idJob, JobStatus jobStatus);
+	@Query("select count(d) > 0 from Duty d where d.descriptor.id = (select j.descriptor.id from Job j where j.id = ?1 and j.status = ?2)")
+	boolean isCorrectJob(int idJob, JobStatus jobStatus);
+
+	@Query("select count(j) > 0 from Job j where j.descriptor.id = (select d.descriptor.id from Duty d where d.id = ?1) and j.status = ?2")
+	boolean isCorrectDuty(int id, JobStatus published);
 }

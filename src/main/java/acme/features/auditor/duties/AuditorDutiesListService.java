@@ -24,7 +24,7 @@ public class AuditorDutiesListService implements AbstractListService<Auditor, Du
 	public boolean authorise(final Request<Duty> request) {
 		assert request != null;
 
-		return this.repository.isCorrectDuty(request.getModel().getInteger("idJob"), JobStatus.PUBLISHED);
+		return this.repository.isCorrectJob(request.getModel().getInteger("idJob"), JobStatus.PUBLISHED);
 	}
 
 	@Override

@@ -32,4 +32,7 @@ public interface AuthenticatedMessageRepository extends AbstractRepository {
 
 	@Query("select count(mt) > 0 from MessageThread mt join mt.users u where u.id = ?1 and mt.id = ?2")
 	boolean isCorrectMessageThread(int idAccount, int idMessageThread);
+
+	@Query("select count(m) > 0 from Message m where m.id = ?2 and m.messageThread.id in(select mt.id from MessageThread mt join mt.users u where u.id = ?1)")
+	boolean isCorrectMessage(int idAccount, int idMessage);
 }

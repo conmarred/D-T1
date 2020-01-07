@@ -39,4 +39,7 @@ public interface AuthenticatedMessageThreadRepository extends AbstractRepository
 	@Query("select s from Spam s")
 	Spam findSpam();
 
+	@Query("select m.id from Message m where m.messageThread.id = ?1")
+	Collection<Integer> findMessagesId(int id);
+
 }

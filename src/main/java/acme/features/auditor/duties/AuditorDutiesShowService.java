@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.duties.Duty;
+import acme.entities.jobs.JobStatus;
 import acme.entities.roles.Auditor;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -20,7 +21,7 @@ public class AuditorDutiesShowService implements AbstractShowService<Auditor, Du
 	@Override
 	public boolean authorise(final Request<Duty> request) {
 		assert request != null;
-		return true;
+		return this.repository.isCorrectDuty(request.getModel().getInteger("id"), JobStatus.PUBLISHED);
 	}
 
 	@Override

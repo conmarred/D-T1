@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.descriptors.Descriptor;
 import acme.entities.duties.Duty;
+import acme.entities.jobs.JobStatus;
 import acme.entities.roles.Employer;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
@@ -22,7 +23,7 @@ public class EmployerDutyCreateService implements AbstractCreateService<Employer
 	@Override
 	public boolean authorise(final Request<Duty> request) {
 		assert request != null;
-		return true;
+		return this.repository.isCorrectDescriptor(request.getModel().getInteger("descriptorId"), JobStatus.DRAFT, request.getPrincipal().getActiveRoleId());
 	}
 
 	@Override
@@ -41,7 +42,7 @@ public class EmployerDutyCreateService implements AbstractCreateService<Employer
 		assert entity != null;
 		assert model != null;
 
-		model.setAttribute("descriptorId", request.getServletRequest().getParameter("descriptorId"));
+		model.setAttribute("descriptorId", request.getModel().getInteger("descriptorId"));
 
 		request.unbind(entity, model, "title", "description", "time");
 

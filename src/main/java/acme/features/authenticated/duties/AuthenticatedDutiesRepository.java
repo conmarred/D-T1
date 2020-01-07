@@ -23,5 +23,8 @@ public interface AuthenticatedDutiesRepository extends AbstractRepository {
 	String findJobTitle(int id);
 
 	@Query("select count(d) > 0 from Duty d where d.descriptor.id = (select j.descriptor.id from Job j where j.id = ?1 and now()<j.deadline and j.status = ?2)")
-	boolean isCorrectDuty(int idDescriptor, JobStatus jobStatus);
+	boolean isCorrectJob(int idJob, JobStatus jobStatus);
+
+	@Query("select count(j) > 0 from Job j where j.descriptor.id = (select d.descriptor.id from Duty d where d.id = ?1) and j.status = ?2 and now()<j.deadline")
+	boolean isCorrectDuty(int id, JobStatus published);
 }

@@ -24,7 +24,7 @@ public class EmployerAuditsOfAJobListService implements AbstractListService<Empl
 	public boolean authorise(final Request<AuditRecord> request) {
 		assert request != null;
 
-		return true;
+		return this.repository.isCorrectJob(request.getModel().getInteger("idJob"), request.getPrincipal().getActiveRoleId());
 	}
 
 	@Override

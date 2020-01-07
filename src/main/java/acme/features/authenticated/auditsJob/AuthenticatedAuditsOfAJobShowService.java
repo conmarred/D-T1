@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.auditRecords.AuditRecord;
+import acme.entities.auditRecords.AuditRecordStatus;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
@@ -21,7 +22,7 @@ public class AuthenticatedAuditsOfAJobShowService implements AbstractShowService
 	public boolean authorise(final Request<AuditRecord> request) {
 		assert request != null;
 
-		return true;
+		return this.repository.isCorrectAuditRecord(request.getModel().getInteger("id"), AuditRecordStatus.PUBLISHED);
 	}
 
 	@Override

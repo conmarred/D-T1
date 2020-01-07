@@ -31,4 +31,7 @@ public interface AuditorAuditRecordRepository extends AbstractRepository {
 	@Query("select s from Spam s")
 	Spam findSpam();
 
+	@Query("select count(a) > 0 from AuditRecord a where a.id = ?1 and (a.status = ?3 or (a.status = ?2 and a.auditor.id = ?4))")
+	boolean isCorrectAuditor(int id, AuditRecordStatus draft, AuditRecordStatus published, int idAuditor);
+
 }

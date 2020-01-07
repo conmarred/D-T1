@@ -20,7 +20,7 @@ public class AuthenticatedMessageShowService implements AbstractShowService<Auth
 	@Override
 	public boolean authorise(final Request<Message> request) {
 		assert request != null;
-		return true;
+		return this.repository.isCorrectMessage(request.getPrincipal().getAccountId(), request.getModel().getInteger("id"));
 	}
 
 	@Override

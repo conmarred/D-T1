@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import acme.entities.auditRecords.AuditRecord;
 import acme.entities.auditRecords.AuditRecordStatus;
+import acme.entities.jobs.JobStatus;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
@@ -24,7 +25,7 @@ public class AuthenticatedAuditsOfAJobListService implements AbstractListService
 	public boolean authorise(final Request<AuditRecord> request) {
 		assert request != null;
 
-		return true;
+		return this.repository.isCorrectJob(request.getModel().getInteger("id"), JobStatus.PUBLISHED);
 	}
 
 	@Override
@@ -41,7 +42,7 @@ public class AuthenticatedAuditsOfAJobListService implements AbstractListService
 	public Collection<AuditRecord> findMany(final Request<AuditRecord> request) {
 		assert request != null;
 
-		Collection<AuditRecord> res = this.repository.findAuditsOfAJob(Integer.parseInt(request.getServletRequest().getParameter("id")), AuditRecordStatus.DRAFT, request.getPrincipal().getActiveRoleId(), AuditRecordStatus.PUBLISHED);
+		Collection<AuditRecord> res = this.repository.findAuditsOfAJob(request.getModel().getInteger("id"), AuditRecordStatus.PUBLISHED);
 
 		return res;
 	}
