@@ -21,5 +21,5 @@ public class Answer extends DomainEntity {
 	private String				password;
 
 	@URL
-	private String				propertyOptional;
+	private String				keylet;
 }

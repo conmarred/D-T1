@@ -33,7 +33,7 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 		model.setAttribute("haveApplications", this.repository.existsApplicationsJob(entity.getId()));
 		model.setAttribute("descriptorId", entity.getDescriptor().getId());
 
-		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description", "id", "jobChallenge.description", "jobChallenge.moreInfo");
+		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description", "id", "solim.description", "solim.keylet");
 	}
 
 	@Override

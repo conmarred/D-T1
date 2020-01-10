@@ -22,9 +22,9 @@ employer.job.form.panel.descriptor = Descriptor/a
 employer.job.form.panel.descriptor.description = Descripción
 employer.job.form.panel.descriptor.duties = Labor
 
-employer.job.form.panel.jobChallenge = XXXXJobChallenge
-employer.job.form.panel.jobChallenge.description = Descripcion
-employer.job.form.panel.jobChallenge.moreInfo = Link más información
+employer.job.form.panel.solim = Solim
+employer.job.form.panel.solim.description = Descripcion
+employer.job.form.panel.solim.keylet = Keylet
 
 
 employer.job.form.button.return = Volver

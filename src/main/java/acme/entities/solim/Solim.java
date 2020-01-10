@@ -1,5 +1,5 @@
 
-package acme.entities.XXXXJobChallenge;
+package acme.entities.solim;
 
 import javax.persistence.Entity;
 
@@ -13,15 +13,15 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class JobChallenge extends DomainEntity {
+public class Solim extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
 
-	@Length(max = 30)
+	@Length(max = 256)
 	private String				description;
 
 	@URL
-	private String				moreInfo;
+	private String				keylet;
 
 	// Relationships ----------------------------------------------------------
 

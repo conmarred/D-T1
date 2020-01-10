@@ -27,8 +27,8 @@
        `id` integer not null,
         `version` integer not null,
         `answer` varchar(255),
+        `keylet` varchar(255),
         `password` varchar(255),
-        `property_optional` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -175,15 +175,7 @@
         `title` varchar(255),
         `descriptor_id` integer not null,
         `employer_id` integer not null,
-        `job_challenge_id` integer,
-        primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `job_challenge` (
-       `id` integer not null,
-        `version` integer not null,
-        `description` varchar(255),
-        `more_info` varchar(255),
+        `solim_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -274,6 +266,14 @@
         `reward_currency` varchar(255),
         `ticker` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `solim` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `keylet` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -420,9 +420,9 @@ create index IDXldvd2iai9jb731mxg9he7vw31 on `worker` (`user_account_id`);
        references `employer` (`id`);
 
     alter table `job` 
-       add constraint `FKiatkkrhi9etehsh2jc0k9bhkc` 
-       foreign key (`job_challenge_id`) 
-       references `job_challenge` (`id`);
+       add constraint `FK56shwrbgy3ug729w5himb9w5u` 
+       foreign key (`solim_id`) 
+       references `solim` (`id`);
 
     alter table `justification` 
        add constraint `FK8ma9xucf9mh9736jhtdumt8x3` 

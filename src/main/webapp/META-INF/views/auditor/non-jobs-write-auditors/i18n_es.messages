@@ -18,9 +18,9 @@ auditor.non-jobs-write-auditors.form.label.link = Más información
 auditor.non-jobs-write-auditors.form.panel.descriptor = Descriptor/a
 auditor.non-jobs-write-auditors.form.button.duties = Labores de este/a descriptor/a
 
-auditor.non-jobs-write-auditors.form.panel.jobChallenge = XXXXJobChallenge
-auditor.non-jobs-write-auditors.form.panel.jobChallenge.description = Descripción
-auditor.non-jobs-write-auditors.form.panel.jobChallenge.moreInfo = Enlace para más información
+auditor.non-jobs-write-auditors.form.panel.solim = Solim
+auditor.non-jobs-write-auditors.form.panel.solim.description = Descripción
+auditor.non-jobs-write-auditors.form.panel.solim.keylet = Keylet
 
 auditor.non-jobs-write-auditors.form.button.return = Volver
 auditor.non-jobs-write-auditors.form.button.list-audits-job = Auditorías de este trabajo

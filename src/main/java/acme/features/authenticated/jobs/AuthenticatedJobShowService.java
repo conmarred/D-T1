@@ -31,7 +31,7 @@ public class AuthenticatedJobShowService implements AbstractShowService<Authenti
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "status", "deadline", "salary", "link", "descriptor.description", "id", "jobChallenge.description", "jobChallenge.moreInfo");
+		request.unbind(entity, model, "reference", "title", "status", "deadline", "salary", "link", "descriptor.description", "id", "solim.description", "solim.keylet");
 
 	}
 

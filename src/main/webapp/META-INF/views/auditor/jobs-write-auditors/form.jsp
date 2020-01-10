@@ -26,9 +26,9 @@
 		<acme:form-textbox code="auditor.jobs-write-auditors.form.panel.descriptor.description" path="descriptor.description"/>
 	</acme:form-panel>
 	
-	<acme:form-panel code="auditor.jobs-write-auditors.form.panel.jobChallenge">
-		<acme:form-textbox code="auditor.jobs-write-auditors.form.panel.jobChallenge.description" path="jobChallenge.description"/>
-		<acme:form-textbox code="auditor.jobs-write-auditors.form.panel.jobChallenge.moreInfo" path="jobChallenge.moreInfo"/>
+	<acme:form-panel code="auditor.jobs-write-auditors.form.panel.solim">
+		<acme:form-textbox code="auditor.jobs-write-auditors.form.panel.solim.description" path="solim.description"/>
+		<acme:form-textbox code="auditor.jobs-write-auditors.form.panel.solim.keylet" path="solim.keylet"/>
 	</acme:form-panel>
 	
 	<acme:form-submit code="auditor.jobs-write-auditors.form.button.duties" action="/auditor/duty/list?idJob=${id}" method="get"/>

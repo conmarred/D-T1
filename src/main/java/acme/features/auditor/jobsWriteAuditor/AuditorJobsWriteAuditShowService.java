@@ -31,7 +31,7 @@ public class AuditorJobsWriteAuditShowService implements AbstractShowService<Aud
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description", "id", "jobChallenge.description", "jobChallenge.moreInfo");
+		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description", "id", "solim.description", "solim.keylet");
 	}
 
 	@Override

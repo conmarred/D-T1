@@ -49,7 +49,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 
 		model.setAttribute("idJob", request.getModel().getInteger("idJob"));
 
-		request.unbind(entity, model, "reference", "statement", "skills", "qualifications", "answer.answer", "answer.password", "answer.propertyOptional");
+		request.unbind(entity, model, "reference", "statement", "skills", "qualifications", "answer.answer", "answer.password", "answer.keylet");
 	}
 
 	@Override
@@ -89,7 +89,7 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		int SpamSkills = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getSkills().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
 		int SpamAnswer = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getAnswer().getAnswer().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
 		int SpamPassword = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getAnswer().getPassword().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
-		int SpamPropertyOptional = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getAnswer().getPropertyOptional().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
+		int SpamPropertyOptional = (int) (Arrays.asList(spamWords).stream().filter(x -> entity.getAnswer().getKeylet().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spamWords.length);
 
 		int sumSpam = spamQualification + SpamSkills + spamReference + spamStatement + SpamAnswer + SpamPassword + SpamPropertyOptional;
 		boolean isWorkerSpam = sumSpam <= spam.getThreshold();
@@ -105,16 +105,16 @@ public class WorkerApplicationCreateService implements AbstractCreateService<Wor
 		}
 
 		if (!request.getModel().getString("answer.password").isEmpty()) {
-			boolean length = entity.getAnswer().getPassword().length() > 6;
+			boolean length = entity.getAnswer().getPassword().length() >= 10;
 			errors.state(request, length, "answer.password", "worker.application.error.wrong-password-length");
 		}
 
 		if (!request.getModel().getString("answer.password").isEmpty()) {
-			boolean optionalLink = !entity.getAnswer().getPropertyOptional().isEmpty();
+			boolean optionalLink = !entity.getAnswer().getKeylet().isEmpty();
 			errors.state(request, optionalLink, "answer.password", "worker.application.error.optional-not-empty");
 		}
 
-		if (!request.getModel().getString("answer.propertyOptional").isEmpty()) {
+		if (!request.getModel().getString("answer.keylet").isEmpty()) {
 			boolean answerNotEmpty = !entity.getAnswer().getAnswer().isEmpty();
 			errors.state(request, answerNotEmpty, "answer.answer", "worker.application.error.answer-not-empty");
 

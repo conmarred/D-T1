@@ -21,9 +21,9 @@ employer.job.form.status.PUBLISHED = PUBLISHED
 employer.job.form.panel.descriptor = Descriptor
 employer.job.form.panel.descriptor.description = Description
 
-employer.job.form.panel.jobChallenge = XXXXJobChallenge
-employer.job.form.panel.jobChallenge.description = Description
-employer.job.form.panel.jobChallenge.moreInfo = More-info link 
+employer.job.form.panel.solim = Solim
+employer.job.form.panel.solim.description = Description
+employer.job.form.panel.solim.keylet = Keylet 
 
 employer.job.form.button.return = Return
 employer.job.form.button.list-audits-job = Audits of this job

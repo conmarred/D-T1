@@ -20,7 +20,7 @@ worker.application.form.label.job.title = Job's title
 worker.application.form.panel.answer = Answer
 worker.application.form.panel.answer.answer = Answer
 worker.application.form.panel.answer.password = Password
-worker.application.form.panel.answer.propertyOptional = propertyOptional
+worker.application.form.panel.answer.keylet = Keylet
 
 worker.application.form.button.return = Return
 
@@ -34,6 +34,6 @@ worker.application.error.spam-entity = Application contains too much words spam
 worker.application.reference.error.duplicated = Reference number is duplicated
 
 worker.application.error.incorrect-password = Password must include at least one letter, one number and one punctuation symbol
-worker.application.error.wrong-password-length = Password length must be a minimum of X characters
-worker.application.error.optional-not-empty = The propertyOptional must not be empty
+worker.application.error.wrong-password-length = Password length must be a minimum of 10 characters
+worker.application.error.optional-not-empty = The keylet must not be empty
 worker.application.error.answer-not-empty = The answer must not be empty

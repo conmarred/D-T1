@@ -57,7 +57,7 @@
 
     alter table `job` 
        drop 
-       foreign key `FKiatkkrhi9etehsh2jc0k9bhkc`;
+       foreign key `FK56shwrbgy3ug729w5himb9w5u`;
 
     alter table `justification` 
        drop 
@@ -125,8 +125,6 @@
 
     drop table if exists `job`;
 
-    drop table if exists `job_challenge`;
-
     drop table if exists `justification`;
 
     drop table if exists `message`;
@@ -144,6 +142,8 @@
     drop table if exists `request_auditor`;
 
     drop table if exists `requests`;
+
+    drop table if exists `solim`;
 
     drop table if exists `spam`;
 

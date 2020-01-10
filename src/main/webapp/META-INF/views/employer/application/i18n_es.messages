@@ -21,7 +21,7 @@ employer.application.form.label.justification = Justificación
 employer.application.form.panel.answer = Respuesta
 employer.application.form.panel.answer.answer = Respuesta
 employer.application.form.panel.answer.password = Contraseña
-employer.application.form.panel.answer.propertyOptional = propertyOptional
+employer.application.form.panel.answer.keylet = Keylet
 
 employer.application.form.button.accept = Aceptar
 employer.application.form.button.reject = Rechazar

@@ -50,7 +50,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 
 		model.setAttribute("haveApplications", this.repository.existsApplicationsJob(entity.getId()));
 
-		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description", "jobChallenge.description", "jobChallenge.moreInfo");
+		request.unbind(entity, model, "reference", "status", "title", "deadline", "salary", "link", "descriptor.description", "solim.description", "solim.keylet");
 	}
 
 	@Override
@@ -93,8 +93,8 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 			int isSpamReference = (int) (Arrays.asList(spams).stream().filter(x -> entity.getReference().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
 			int isSpamTitle = (int) (Arrays.asList(spams).stream().filter(x -> entity.getTitle().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
 			int isSpamDescription = (int) (Arrays.asList(spams).stream().filter(x -> entity.getDescriptor().getDescription().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
-			int isSpamJobDescription = (int) (Arrays.asList(spams).stream().filter(x -> entity.getJobChallenge().getDescription().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
-			int isSpamJobMoreInfo = (int) (Arrays.asList(spams).stream().filter(x -> entity.getJobChallenge().getMoreInfo().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
+			int isSpamJobDescription = (int) (Arrays.asList(spams).stream().filter(x -> entity.getSolim().getDescription().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
+			int isSpamJobMoreInfo = (int) (Arrays.asList(spams).stream().filter(x -> entity.getSolim().getKeylet().toLowerCase().contains(x.toLowerCase().trim())).count() * 100 / spams.length);
 
 			sumSpam += isSpamReference + isSpamTitle + isSpamDescription + isSpamJobDescription + isSpamJobMoreInfo;
 			boolean isSpamEntity = sumSpam <= spam.getThreshold();
@@ -112,8 +112,8 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 			errors.state(request, correctCurrency, "salary", "employer.job.error.correct-currency");
 		}
 
-		if (!entity.getJobChallenge().getMoreInfo().isEmpty()) {
-			boolean correctJobChallenge = !entity.getJobChallenge().getDescription().isEmpty();
+		if (!entity.getSolim().getKeylet().isEmpty()) {
+			boolean correctJobChallenge = !entity.getSolim().getDescription().isEmpty();
 			errors.state(request, correctJobChallenge, "jobChallenge.description", "employer.jobChallenge.error.correct-job-challenge");
 		}
 	}
@@ -124,7 +124,7 @@ public class EmployerJobUpdateService implements AbstractUpdateService<Employer,
 		assert entity != null;
 
 		this.repository.save(entity.getDescriptor());
-		this.repository.save(entity.getJobChallenge());
+		this.repository.save(entity.getSolim());
 		this.repository.save(entity);
 
 	}

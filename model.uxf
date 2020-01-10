@@ -987,10 +987,10 @@ m1= 1
       <h>45</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-JobChallenge
+Solim
 --
-+ description: String {Length(max=30)}
-+ more-info: String {URL}
++ description: String {Length(max=256)}
++ keylet: String {URL}
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -1021,8 +1021,8 @@ m1=    1
 Answer
 --
 + answer: String
-+ password: String 
-+ propertyOptional: String {URL}
++ password: String {Length(min=10)}
++ keylet: String {URL}
 </panel_attributes>
     <additional_attributes/>
   </element>

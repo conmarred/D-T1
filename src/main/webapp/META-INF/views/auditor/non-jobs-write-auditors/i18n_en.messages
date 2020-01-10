@@ -18,9 +18,9 @@ auditor.non-jobs-write-auditors.form.label.link = More information
 auditor.non-jobs-write-auditors.form.panel.descriptor = Descriptor
 auditor.non-jobs-write-auditors.form.button.duties = Duties of this descriptor
 
-auditor.non-jobs-write-auditors.form.panel.jobChallenge = XXXXJobChallenge
-auditor.non-jobs-write-auditors.form.panel.jobChallenge.description = Description
-auditor.non-jobs-write-auditors.form.panel.jobChallenge.moreInfo = More info Link
+auditor.non-jobs-write-auditors.form.panel.solim = Solim
+auditor.non-jobs-write-auditors.form.panel.solim.description = Description
+auditor.non-jobs-write-auditors.form.panel.solim.keylet = Keylet
 
 auditor.non-jobs-write-auditors.form.button.return = Return
 auditor.non-jobs-write-auditors.form.button.list-audits-job = Audits of this job

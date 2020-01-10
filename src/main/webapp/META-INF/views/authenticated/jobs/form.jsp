@@ -26,9 +26,9 @@
 		<acme:form-textbox code="authenticated.job.form.panel.descriptor.description" path="descriptor.description" />
 	</acme:form-panel>
 	
-	<acme:form-panel code="authenticated.job.form.panel.jobChallenge">
-		<acme:form-textbox code="authenticated.job.form.panel.jobChallenge.description" path="jobChallenge.description" />
-		<acme:form-textbox code="authenticated.job.form.panel.jobChallenge.moreInfo" path="jobChallenge.moreInfo" />
+	<acme:form-panel code="authenticated.job.form.panel.solim">
+		<acme:form-textbox code="authenticated.job.form.panel.solim.description" path="solim.description" />
+		<acme:form-textbox code="authenticated.job.form.panel.solim.keylet" path="solim.keylet" />
 	</acme:form-panel>
 
 	<acme:form-submit code="authenticated.job.form.button.duties" action="/authenticated/duty/list?idJob=${id}" method="get" />

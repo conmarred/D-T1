@@ -679,7 +679,7 @@
 		<property name= "link" value= "https://www.google.es/"/>
 		<property name="descriptor" ref="descriptor06"/>
 		<property name="employer" ref="employer01"/>
-		<property name="jobChallenge" ref="jobChallenge01"/>
+		<property name="solim" ref="solim01"/>
 	</bean>
 	
 	<bean id= "job07" class= "acme.entities.jobs.Job">
@@ -1053,16 +1053,16 @@
 		<property name= "messageThread" ref= "messageThread02"/>
 	</bean> 
 	
-	<!-- JobChallenge -->
+	<!-- Solim -->
 	
-	<bean id="jobChallenge01" class="acme.entities.XXXXJobChallenge.JobChallenge">
+	<bean id="solim01" class="acme.entities.solim.Solim">
 		<property name= "description" value= "This is"/>
-		<property name= "moreInfo" value= "http://www.google.com"/>
+		<property name= "keylet" value= "http://www.google.com"/>
 	</bean> 
 	
-	<bean id="jobChallenge02" class="acme.entities.XXXXJobChallenge.JobChallenge">
+	<bean id="solim02" class="acme.entities.solim.Solim">
 		<property name= "description" value= "This is 2"/>
-		<property name= "moreInfo" value= "http://www.ev.us.es"/>
+		<property name= "keylet" value= "http://www.ev.us.es"/>
 	</bean> 
 	
 	<!-- Answer 

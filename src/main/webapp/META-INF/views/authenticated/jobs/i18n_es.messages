@@ -18,9 +18,9 @@ authenticated.job.form.label.link = Más información
 authenticated.job.form.panel.descriptor = Descriptor/a
 authenticated.job.form.panel.descriptor.description = Descripción
 
-authenticated.job.form.panel.jobChallenge = XXXXJobChallenge
-authenticated.job.form.panel.jobChallenge.description = Descripción
-authenticated.job.form.panel.jobChallenge.moreInfo = Enlace para más información
+authenticated.job.form.panel.solim = Solim
+authenticated.job.form.panel.solim.description = Descripción
+authenticated.job.form.panel.solim.keylet = Keylet
 
 authenticated.job.form.button.return = Volver
 authenticated.job.form.button.list-audits-job = Auditorías de este trabajo

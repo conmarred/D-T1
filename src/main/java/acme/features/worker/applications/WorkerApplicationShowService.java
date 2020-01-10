@@ -33,7 +33,7 @@ public class WorkerApplicationShowService implements AbstractShowService<Worker,
 		model.setAttribute("username", entity.getWorker().getUserAccount().getUsername());
 		model.setAttribute("justification.justification", this.repository.findJustification(entity.getId()));
 
-		request.unbind(entity, model, "reference", "moment", "status", "statement", "skills", "qualifications", "job.title", "answer.answer", "answer.password", "answer.propertyOptional");
+		request.unbind(entity, model, "reference", "moment", "status", "statement", "skills", "qualifications", "job.title", "answer.answer", "answer.password", "answer.keylet");
 	}
 
 	@Override

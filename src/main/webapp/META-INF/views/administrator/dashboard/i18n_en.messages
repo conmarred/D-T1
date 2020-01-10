@@ -8,8 +8,8 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-administrator.dashboard.form.label.ratioOfJobHaveXXXX = Ratio of jobs that have XXXX
-administrator.dashboard.form.label.ratioOfXXXXThatHaveAXXXX = Ratio of XXXX that have a XXXX
+administrator.dashboard.form.label.ratioOfJobHaveSolim = Ratio of jobs that have solim
+administrator.dashboard.form.label.ratioOfSolimsThatHaveAKeylet = Ratio of solims that have a keylet
 administrator.dashboard.form.label.ratioOfApplicationsThatHaveAPassword = Ratio of applications that are password-protected 
 
 

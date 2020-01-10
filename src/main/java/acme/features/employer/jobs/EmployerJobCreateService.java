@@ -44,7 +44,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline", "salary", "link", "descriptor.description", "jobChallenge.description", "jobChallenge.moreInfo");
+		request.unbind(entity, model, "reference", "title", "deadline", "salary", "link", "descriptor.description", "solim.description", "solim.keylet");
 
 	}
 
@@ -78,9 +78,9 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		boolean isDuplicateTicker = this.repository.findReference(entity.getReference()) != null;
 		errors.state(request, !isDuplicateTicker, "reference", "employer.reference.error.duplicated");
 
-		if (!entity.getJobChallenge().getMoreInfo().isEmpty()) {
-			boolean correctJobChallenge = !entity.getJobChallenge().getDescription().isEmpty();
-			errors.state(request, correctJobChallenge, "jobChallenge.description", "employer.jobChallenge.error.correct-job-challenge");
+		if (!entity.getSolim().getKeylet().isEmpty()) {
+			boolean correctJobChallenge = !entity.getSolim().getDescription().isEmpty();
+			errors.state(request, correctJobChallenge, "solim.description", "employer.jobChallenge.error.correct-job-challenge");
 		}
 	}
 
@@ -90,7 +90,7 @@ public class EmployerJobCreateService implements AbstractCreateService<Employer,
 		assert entity != null;
 
 		this.repository.save(entity.getDescriptor());
-		this.repository.save(entity.getJobChallenge());
+		this.repository.save(entity.getSolim());
 		this.repository.save(entity);
 	}
 

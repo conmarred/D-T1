@@ -31,9 +31,9 @@
 		<acme:form-textarea code="employer.job.form.panel.descriptor.description" path="descriptor.description"/>
 	</acme:form-panel>
 	
-	<acme:form-panel code="employer.job.form.panel.jobChallenge">
-		<acme:form-textarea code="employer.job.form.panel.jobChallenge.description" path="jobChallenge.description"/>
-		<acme:form-url code="employer.job.form.panel.jobChallenge.moreInfo" path="jobChallenge.moreInfo"/>
+	<acme:form-panel code="employer.job.form.panel.solim">
+		<acme:form-textarea code="employer.job.form.panel.solim.description" path="solim.description"/>
+		<acme:form-url code="employer.job.form.panel.solim.keylet" path="solim.keylet"/>
 	</acme:form-panel>
 	<acme:form-submit test="${haveApplications == false and command == 'show'}" code="employer.job.button.delete" action="/employer/job/delete" />
 	<jstl:if test="${haveApplications and command == 'show'}">

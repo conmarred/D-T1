@@ -30,7 +30,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "ratioOfJobHaveXXXX", "ratioOfXXXXThatHaveAXXXX", "ratioOfApplicationsThatHaveAPassword");
+		request.unbind(entity, model, "ratioOfJobHaveSolim", "ratioOfSolimsThatHaveAKeylet", "ratioOfApplicationsThatHaveAPassword");
 
 	}
 
@@ -40,9 +40,9 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		Dashboard res = new Dashboard();
 
-		res.setRatioOfJobHaveXXXX(this.repository.ratioOfJobHaveXXXX());
+		res.setRatioOfJobHaveSolim(this.repository.ratioOfJobHaveSolim());
 
-		res.setRatioOfXXXXThatHaveAXXXX(this.repository.ratioOfXXXXThatHaveAXXXX());
+		res.setRatioOfSolimsThatHaveAKeylet(this.repository.ratioOfSolimsThatHaveAKeylet());
 
 		res.setRatioOfApplicationsThatHaveAPassword(this.repository.ratioOfApplicationsThatHaveAPassword());
 
