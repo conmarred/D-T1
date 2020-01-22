@@ -27,7 +27,7 @@
 	
 	<acme:form-panel code="employer.application.form.panel.answer">
   		<acme:form-textarea code="employer.application.form.panel.answer.answer" path="answer.answer"/>
-  		<acme:form-password code="employer.application.form.panel.answer.password" path="answer.password"/>
+  		<acme:form-textbox code="employer.application.form.panel.answer.password" path="answer.password"/>
   		<acme:form-url code="employer.application.form.panel.answer.keylet" path="answer.keylet"/>
    	</acme:form-panel>
 	
